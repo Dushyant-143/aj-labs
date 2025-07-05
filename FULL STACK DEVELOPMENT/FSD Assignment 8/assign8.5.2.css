@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0be837;
+  }
+  
+.grid-container {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 100px;
+    gap: 10px;
+    border: 2px solid black;
+  }
+
+  .item {
+    background-color: lightblue;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .item1 {
+    justify-self: start; /* Align to the left */
+  }
+
+  .item2 {
+    justify-self: end; /* Align to the right */
+  }

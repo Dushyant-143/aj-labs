@@ -1,0 +1,15 @@
+/* 1. Descendant combinator - remove bullets and text underline */
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* 2. Child combinator - display list items inline */
+  nav > ul > li {
+    display: inline;
+  }
+  
+  /* 3. Adjacent sibling combinator - add margin between menu items */
+  nav ul li + li {
+    margin-left: 15px;
+  }

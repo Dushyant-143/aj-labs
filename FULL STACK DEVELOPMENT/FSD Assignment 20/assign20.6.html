@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Carousel</title>
+</head>
+
+<body>
+
+    <h2>Image Carousel</h2>
+
+    <img id="carousel"
+        src="https://digitalsignagepress.com/wp-content/uploads/2016/12/HTML5-Digital-Signage-Solution.png" width="500"
+        height="300">
+    <br><br>
+    <button onclick="prev()">Previous</button>
+    <button onclick="next()">Next</button>
+
+    <script>
+        const images = [
+            "https://digitalsignagepress.com/wp-content/uploads/2016/12/HTML5-Digital-Signage-Solution.png",
+            "https://tse3.mm.bing.net/th/id/OIP.lI34zykiSw3WEpDroCEk6QHaE7?w=800&h=532&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3",
+            "https://tse3.mm.bing.net/th/id/OIP.jZe9RHPAZhYpS9LGLwCe-AAAAA?w=474&h=315&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3"
+        ];
+
+        let current = 0;
+
+        function showImage() {
+            document.getElementById("carousel").src = images[current];
+        }
+
+        function prev() {
+            current = (current - 1 + images.length) % images.length;
+            showImage();
+        }
+
+        function next() {
+            current = (current + 1) % images.length;
+            showImage();
+        }
+    </script>
+
+</body>
+
+</html>

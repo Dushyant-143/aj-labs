@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.sidebar {
+  width: 200px;
+  background-color: #eee;
+  padding: 15px;
+  height: 100vh;
+}
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.main {
+  flex: 1;
+  padding: 20px;
+}
+.email {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

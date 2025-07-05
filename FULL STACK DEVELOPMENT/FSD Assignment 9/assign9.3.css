@@ -1,0 +1,9 @@
+.example::before {
+    content: "Start - ";
+    color: blue;
+  }
+  
+  .example::after {
+    content: " - End";
+    color: green;
+  }  

@@ -1,0 +1,84 @@
+
+<!-- Here’s an HTML5 web page with semantic elements to showcase HTML5 features:  -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HTML5 Features</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        } 
+        header, section, footer { 
+            margin: 20px; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        } 
+        h1, h2 { 
+            color: #333; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1>Key Features of HTML5</h1> 
+    </header> 
+     
+    <section> 
+        <h2>1. Semantic Elements</h2> 
+        <p>HTML5 introduces new semantic elements like 
+<code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, 
+<code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>, which improve 
+the structure and readability of web pages.</p> 
+    </section> 
+     
+    <section> 
+        <h2>2. Multimedia Support</h2> 
+        <p>HTML5 provides built-in support for audio and video using the 
+<code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements, making 
+it easier to embed media without requiring third-party plugins.</p> 
+        <video controls width="300"> 
+            <source src="sample.mp4" type="video/mp4"> 
+            Your browser does not support the video tag. 
+        </video> 
+    </section> 
+     
+    <section> 
+        <h2>3. Canvas API</h2> 
+        <p>The <code>&lt;canvas&gt;</code> element allows for dynamic, 
+scriptable rendering of graphics, animations, and games directly in the 
+browser.</p> 
+        <canvas id="myCanvas" width="300" height="150" style="border:1px 
+solid #000;"></canvas> 
+        <script> 
+            document.addEventListener("DOMContentLoaded", function() { 
+                var canvas = document.getElementById("myCanvas"); 
+                if (canvas.getContext) { 
+                    var ctx = canvas.getContext("2d"); 
+                    ctx.fillStyle = "blue"; 
+                    ctx.fillRect(50, 50, 200, 50); 
+                } 
+            }); 
+        </script> 
+    </section> 
+     
+    <section> 
+        <h2>4. Local Storage</h2> 
+        <p>HTML5 introduces the Web Storage API, including 
+<code>localStorage</code> and <code>sessionStorage</code>, allowing web 
+applications to store data locally within the user's browser without needing 
+cookies.</p> 
+    </section> 
+     
+    <footer> 
+        <p>&copy; 2025 HTML5 Features Showcase</p> 
+    </footer> 
+</body> 
+</html>

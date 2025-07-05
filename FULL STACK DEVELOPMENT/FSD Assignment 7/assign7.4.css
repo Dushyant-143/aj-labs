@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 1, 45);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #7f7c8d, #f4f2fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 48px;
+    background-color: #f4f2fd;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 262px;
+    border-radius: 8px;
+    padding: 32px;
+    gap: 32px;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box-1, .box-3 {
+    background-color: #FFFFFF;
+}
+
+.box-2 {
+    background-color: #202842;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card .subtitle {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.box-2 .subtitle {
+    color: #ccc;
+  }
+
+.card .price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box-2 .price {
+    color: white;
+  }
+  
+
+.card ul {
+    list-style: none;
+    line-height: 1.6;
+}
+
+.card ul li i {
+    color: #202842;
+    margin-right: 8px;
+}
+.box-2 ul li i {
+    color: white;
+}
+
+
+.card button {
+    padding: 10px 24px;
+    background-color: #202842;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box-2 button {
+    background-color: #FFFFFF;
+    color: #202842;
+}
+
+.card button:hover {
+    background-color: #7f7c8d;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }

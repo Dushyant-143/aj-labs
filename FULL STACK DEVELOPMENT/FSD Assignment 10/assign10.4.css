@@ -1,0 +1,8 @@
+/* 1. I visited https://pwskills.com
+2. I opened Developer Tools by pressing F12
+3. I inspected the logo and found it was inside an <svg> tag with class="text-white"
+4. I added the following CSS rule using DevTools: */
+
+.text-white {
+   display: none;
+}

@@ -1,0 +1,30 @@
+/* Pseudo-elements: Add text before and after */
+.styled-btn::before {
+    content: "Start ";
+    margin-right: 5px;
+    color: #444;
+  }
+  
+  .styled-btn::after {
+    content: " End";
+    margin-left: 5px;
+    color: #444;
+  }
+  
+  /* Base button styling */
+  .styled-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .styled-btn:hover {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }  

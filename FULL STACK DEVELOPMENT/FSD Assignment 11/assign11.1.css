@@ -1,0 +1,25 @@
+/* Default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+main, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ✅ Media Query - When screen width is LESS than 600px */
+@media (max-width: 599px) {
+  header {
+    background-color: blue;
+    color: white;
+  }
+}

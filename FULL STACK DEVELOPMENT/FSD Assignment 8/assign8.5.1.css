@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c54f3;
+  }
+  
+.grid-container {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 100px;
+    justify-items: center; /* Center all items horizontally */
+    gap: 10px;
+    border: 2px solid black;
+  }
+
+  .item {
+    background-color: orange;
+    border: 1px solid #000;
+    padding: 10px;
+  }

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;   /* horizontal centering */
+    align-items: center;       /* vertical centering */
+    height: 100vh;             /* full viewport height */
+    background-color: #003a75;
+  }
+  
+  .center-box {
+    width: 250px;
+    height: 150px;
+    background-color: rgb(0, 255, 0);
+    color: rgb(238, 0, 255);
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 150px;         /* center text vertically */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }  

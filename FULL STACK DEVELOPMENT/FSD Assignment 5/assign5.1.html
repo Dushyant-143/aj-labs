@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS applying to div */
+        .example {
+            background-color: lightblue;
+            color: black;
+            padding: 10px;
+        }
+    </style>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="assign5.1.css">
+</head>
+<body>
+
+    <h2>CSS Priority Test</h2>
+
+    <!-- This div has inline, internal, and external CSS applied -->
+    <div class="example" style="background-color: yellow; color: red;">
+        This is a div with multiple CSS sources.
+    </div>
+
+    <p>Check which style is applied based on priority.</p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 👇 When screen width < 800px → 2 images in a row */
+@media (max-width: 799px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 👇 When screen width < 500px → 1 image in a row */
+@media (max-width: 499px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

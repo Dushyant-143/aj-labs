@@ -1,0 +1,64 @@
+/* Custom color palette */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --button-color: #008CBA;
+    --input-bg: #e8f0fe;
+    --opacity-bg: rgba(200, 200, 200, 0.5);
+}
+
+/* Basic form styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+/* Form container */
+.form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+}
+
+/* Form sections */
+.form__section {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Opacity applied to a section */
+.form__section--transparent {
+    background-color: var(--opacity-bg);
+}
+
+/* Input fields styling */
+.form__input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--input-bg);
+}
+
+/* Button styling */
+.form__button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    background-color: #005f73;
+}

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #66cc66;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.home {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 1460px;
+    min-width: 1200px;
+    min-height: 100vh;
+}
+
+.left-section {
+    width: 55%;
+    padding: 40px 40px 40px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 90px;
+}  
+
+.logo-container {
+    display: flex;
+    gap: 15px;
+}
+
+.container-first .menu {
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.up-menu ul {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.down-menu {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.down-menu button {
+    padding: 5px 20px;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.down-menu button:nth-child(1) {
+    background-color: #FB792B;
+    color: white;
+}
+
+.headline {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.headline h2 {
+    width: 100%;
+    font-size: 55px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.headline .tags {
+    width: 438px;
+    height: 39px;
+    font-size: 41px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tags span:nth-child(1) {
+    color: green;
+}
+
+.tags span:nth-child(2) {
+    color: orange;
+}
+
+.tags span:nth-child(3) {
+    color: #3a5a98;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-nav button {
+    padding: 10px 20px;
+    margin-top: 25px;
+    border-radius: 5.07px;
+    border: 1.5px solid #aaa9a9;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub-nav button:nth-child(1) {
+    background-color: #213D77;
+    color: white;
+    border: none;
+}
+
+.sub-nav button:hover,
+.down-menu button:hover,
+.search-train-btn button:hover {
+    background-color: #07a4f3;
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+.journey-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-train {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5fb;
+    color: #5b5b5b;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.search-train.second {
+    margin-top: 15px;
+}
+
+
+.station {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.station-header {
+    display: flex;
+    align-items: center;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.main-word {
+    color: rgb(49, 48, 48);
+    font-size: 30px;
+}
+
+.material-symbols-outlined {
+    font-size: 40px !important;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+
+.search-train-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-train-btn button {
+    width: 100%;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ba37;
+    color: white;
+    font-weight: bold;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10.14px;
+    font-size: 30px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.image {
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

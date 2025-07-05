@@ -1,0 +1,202 @@
+/* .container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #0be465;
+  }
+  .circle {
+    width: 60px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+  }
+  /* Positioning Circles */
+  /* .c1 { 
+    top: 20px; 
+    left: 40px; 
+  }
+  .c2 { 
+    top: 20px; 
+    left: 160px; 
+  }
+  .c3 { 
+    top: 140px; 
+    left: 160px; 
+  }
+  .c4 {
+    top: 140px; 
+    left: 40px; 
+  }
+  .c5 { 
+    top: 260px; 
+    left: 40px; 
+  }
+  .c6 { 
+    top: 260px; 
+    left: 160px; 
+  } */
+  /* Connecting lines */
+  /* .c1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    background: blue;
+    left: -60px;
+    top: 50%;
+  }
+  .c1::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    background: blue;
+    left: 100%;
+    top: 50%;
+  }
+  .c2::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 4px;
+    background: blue;
+    left: 50%;
+    top: 100%;
+  }
+  .c3::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    background: blue;
+    left: -60px;
+    top: 50%;
+  }
+  .c4::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 4px;
+    background: blue;
+    left: 50%;
+    top: 100%;
+  }
+  .c5::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    background: blue;
+    left: 100%;
+    top: 50%;
+  } */
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #09b9cd;
+  }
+  
+  /* Common circle style */
+  .circle {
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: rgb(183, 216, 15);
+    position: absolute;
+  }
+  
+  /* C1: top left */
+  .c1 {
+    top: 20px;
+    left: 100px;
+  }
+  
+  /* C1 -> C2 (horizontal line) */
+  .c1::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: blue;
+    left: 100%;
+    top: 50%;
+  }
+  
+  /* C2: top right */
+  .c2 {
+    top: 20px;
+    left: 220px;
+  }
+  
+  /* C2 -> C3 (vertical line) */
+  .c2::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background: blue;
+    left: 50%;
+    top: 100%;
+  }
+  
+  /* C3: right middle */
+  .c3 {
+    top: 120px;
+    left: 220px;
+  }
+  
+  /* C3 -> C4 (horizontal line) */
+  .c3::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: blue;
+    left: -120px;
+    top: 50%;
+  }
+  
+  /* C4: left middle */
+  .c4 {
+    top: 120px;
+    left: 100px;
+  }
+  
+  /* C4 -> C5 (vertical line) */
+  .c4::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background: blue;
+    left: 50%;
+    top: 100%;
+  }
+  
+  /* C5: bottom left */
+  .c5 {
+    top: 220px;
+    left: 100px;
+  }
+  
+  /* C5 -> C6 (horizontal line) */
+  .c5::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 4px;
+    background: blue;
+    left: 60px;
+    top: 50%;
+  }
+  
+  /* C6: bottom right */
+  .c6 {
+    top: 220px;
+    left: 220px;
+  }

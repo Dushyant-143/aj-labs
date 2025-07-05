@@ -1,0 +1,33 @@
+/* Base paragraph styles */
+.paragraph {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Modifier for primary paragraph */
+.paragraph--primary {
+    background-color: blue;
+    color: white;
+}
+
+/* Modifier for secondary paragraph */
+.paragraph--secondary {
+    background-color: gray;
+    color: white;
+}
+
+/* Modifier for warning paragraph */
+.paragraph--warning {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* Modifier for success paragraph */
+.paragraph--success {
+    background-color: green;
+    color: white;
+    font-style: italic;
+}

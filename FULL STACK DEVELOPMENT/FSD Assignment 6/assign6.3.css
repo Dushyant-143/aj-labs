@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e1cfeb;
+}
+
+.navbar {
+    background-color: #4f83e2;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: border 0.3s ease-in-out;
+}
+
+.border-solid {
+    border: 2px solid white;
+}
+
+.border-dashed {
+    border: 2px dashed white;
+}
+
+.border-dotted {
+    border: 2px dotted white;
+}
+
+.border-double {
+    border: 4px double white;
+}
+
+.border-groove {
+    border: 4px groove white;
+}

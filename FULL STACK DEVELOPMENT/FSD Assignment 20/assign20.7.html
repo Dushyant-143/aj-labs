@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vertical Dropdown Menu</title>
+    <style>
+        /* Main menu */
+        ul.menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+            background-color: #007BFF;
+            /* Blue background */
+        }
+
+        /* Menu items */
+        ul.menu>li {
+            position: relative;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 16px;
+            border-bottom: 1px solid #0056b3;
+            cursor: pointer;
+        }
+
+        ul.menu>li:hover {
+            background-color: #0056b3;
+        }
+
+        /* Submenu hidden by default */
+        ul.submenu {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #3399FF;
+        }
+
+        /* Submenu items */
+        ul.submenu li {
+            padding: 10px 16px;
+            border-top: 1px solid #007BFF;
+            color: white;
+        }
+
+        ul.submenu li:hover {
+            background-color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+            Menu 1
+            <ul class="submenu">
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+            Menu 2
+            <ul class="submenu">
+                <li>Option A</li>
+                <li>Option B</li>
+            </ul>
+        </li>
+        <li onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+            Menu 3
+            <ul class="submenu">
+                <li>Extra 1</li>
+                <li>Extra 2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        function showDropdown(menuItem) {
+            const submenu = menuItem.querySelector(".submenu");
+            if (submenu) submenu.style.display = "block";
+        }
+
+        function hideDropdown(menuItem) {
+            const submenu = menuItem.querySelector(".submenu");
+            if (submenu) submenu.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

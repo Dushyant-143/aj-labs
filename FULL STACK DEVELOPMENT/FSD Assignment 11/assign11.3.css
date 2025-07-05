@@ -1,0 +1,35 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 14px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* Responsive Navbar - <768px */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+  }
+
+  .navbar a {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+}

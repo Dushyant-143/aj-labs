@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #042d6a;
+  }
+
+.container-columns {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-auto-columns: 120px;
+    grid-auto-flow: column;
+    gap: 10px;
+    background-color: #fdf6e3; /* Light yellowish background */
+    padding: 10px;
+  }
+  
+  .container-columns div {
+    background-color: peachpuff;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px;
+  }  

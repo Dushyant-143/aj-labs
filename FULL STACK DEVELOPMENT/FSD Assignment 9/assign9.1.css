@@ -1,0 +1,65 @@
+/* A. Link CSS file (already done in HTML with <link rel="stylesheet" href="assign9.1.css"> ) */
+
+
+/* B. Combinator Selectors */
+
+/* 1. Target all anchor tags using any combinator */
+nav a {
+    color: red;
+  }
+  
+  /* 2. Target only the first <h2> tag (TOI) and change text + background */
+  nav h2:first-of-type {
+    color: white;
+    background-color: rgb(109, 206, 12);
+  }
+  
+  /* 3. Target the first <p> tag and change its color to red */
+  nav p:first-of-type {
+    color: red;
+  }
+  
+  
+  /* C. Attribute Selectors */
+  
+  /* 1. Anchor tags with href attribute */
+  a[href] {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* 2. Anchor tag with class="active" */
+  a[class="active"] {
+    color: green;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  /* 3. Anchor tag with target="_self" */
+  a[target="_self"] {
+    background-color: lightblue;
+  }
+  
+  
+  /* D. Pseudo Selectors */
+  
+  /* 1. Target the last <p> and add "..." */
+  nav p:last-of-type::after {
+    content: "...";
+  }
+  
+  /* 2. Change bullet color without changing list item text */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li::before {
+    content: "• ";
+    color: red;
+  }
+  
+  /* 3. Target 2nd <p> tag and change first letter */
+  nav p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 30px;
+ }
